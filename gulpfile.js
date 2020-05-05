@@ -1,4 +1,4 @@
-const gulp        = require('gulp');
+const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 
 // Static server
@@ -10,3 +10,4 @@ gulp.task('browser-sync', function() {
     });
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
+ 
