@@ -344,9 +344,15 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase; }
+  .button:hover {
+    cursor: pointer; }
   .button--primary {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     background-color: #E3B873;
-    color: #fff; }
+    color: #fff;
+    transition: box-shadow 0.5s; }
+    .button--primary:hover {
+      box-shadow: none; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
@@ -377,7 +383,14 @@ template {
   background: #131313 url("../images/hero-bg.jpg") no-repeat center;
   background-size: cover;
   color: #fff; }
+  .hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
+    position: relative;
     max-width: 670px; }
   .hero__text {
     max-width: 500px;
@@ -402,8 +415,18 @@ template {
     min-height: 97px;
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 12px;
+    line-height: 138.6%;
     background-color: #131313;
     color: #fff; }
+    .hero__scroll-down::after {
+      content: "";
+      background: url("../images/arrow-down.svg") no-repeat center;
+      width: 30px;
+      height: 30px;
+      margin-left: 12px;
+      border: 1px solid #E3B873;
+      border-radius: 50%; }
 
 .instagram {
   display: flex;
@@ -411,10 +434,20 @@ template {
   align-items: center;
   background-color: #131313; }
   .instagram__link {
+    display: flex;
+    align-items: center;
+    line-height: 0.8;
     text-transform: uppercase;
     text-decoration: none;
     transform: rotate(90deg);
     color: #E3B873; }
+    .instagram__link::after {
+      content: "";
+      display: inline;
+      margin-left: 8px;
+      width: 50px;
+      height: 1px;
+      background-color: #E3B873; }
 
 .title {
   margin: 0;
