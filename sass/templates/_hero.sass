@@ -1,10 +1,16 @@
 .hero
   position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
   padding-top: 90px
   height: 100vh
   background: $dark url("../images/hero-bg.jpg") no-repeat center
   background-size: cover
   color: $light
+  &__content
+    max-width: 676px
   &__instagram
     position: absolute
     top: 0
@@ -25,3 +31,11 @@
 
 .title
   margin: 0
+  font-family: Yeseva One
+  font-style: normal
+  font-weight: normal
+  font-size: 40px
+  line-height: 53px
+  text-transform: uppercase
+  &--primary
+    color: $primary
