@@ -522,7 +522,7 @@ body {
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    min-width: 22.86rem; }
+    width: 22.86rem; }
   .hero__title {
     font-size: 1.64rem; }
   .hero__text {
