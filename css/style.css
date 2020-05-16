@@ -407,6 +407,20 @@ template {
     border-radius: 1px;
     cursor: pointer; }
 
+.scroll-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0;
+  visibility: hidden; }
+  .scroll-top__button {
+    padding: 0.7rem 0.1rem;
+    font-size: 0.7rem;
+    font-weight: normal; }
+  .scroll-top--visible {
+    opacity: 1;
+    visibility: visible; }
+
 @font-face {
   font-family: 'Futura Demi';
   src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff2");

@@ -19,8 +19,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 $(document).ready(function () {
   var modal = $(".modal"),
       modalBtn = $("[data-toggle=modal]"),
-      closeBtn = $(".modal__close");
-  
+      closeBtn = $(".modal__close"),
+      scrl = $(".scroll-top"),
+      blockPoint = document.querySelector(".hero");
+
+  console.log($(window).scrollTop());
+  $(window).on("scroll", function () {
+    console.log($(window).scrollTop());
+    if($(window).scrollTop() >= 600) {
+      scrl.addClass("scroll-top--visible");
+    };
+    if($(window).scrollTop() <= 600) {
+      scrl.removeClass("scroll-top--visible");
+    };
+  });
+
   modalBtn.on("click", function () {
     modal.toggleClass("modal--visible");
   });
@@ -28,4 +41,14 @@ $(document).ready(function () {
   closeBtn.on("click", function () {
     modal.toggleClass("modal--visible");
   });
+
+  function scrollUp () {
+    blockPoint.scrollIntoView({
+      block: "start",
+      behavior: "smooth"
+    });
+  };
+
+  scrl.on("click", scrollUp);
+  
 });
