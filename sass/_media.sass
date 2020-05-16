@@ -31,8 +31,14 @@
   .card
     &__text
       margin: 0
+  .col
+    &-50, &-30
+      margin-top: 1rem
 
 @media screen and ( max-width: 576px )
+  .scroll-top
+    &__button
+      display: none
   .contacts
     &__phone
       margin-right: 0
@@ -54,13 +60,24 @@
     background-color: $dark-mobile
     &__section-title
       color: $light
-  .section-title
-    &__image
-      margin-bottom: 2rem
+  .section
+    &--dark
+      padding-top: 0
+    &-title
+      &__image
+        margin-bottom: 2rem
+      &__text
+        max-width: 21.86rem
+        margin: auto
+        color: $light
+  .swiper-slide
     &__text
-      max-width: 21.86rem
-      margin: auto
-      color: $light
+      font-size: 1rem
+  .col
+    &-50
+      margin-top: 2rem
+    &-50, &-30
+      width: 100%
 
 @media screen and ( max-height: 320px )
 

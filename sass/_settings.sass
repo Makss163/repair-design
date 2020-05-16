@@ -14,18 +14,42 @@ img
 
 .section
   padding: 60px 0
+  &--dark
+    background-color: $dark
+    color: $light
   &-title
     margin: auto
     max-width: 52.93rem 
     text-align: center
-    font-family: Yeseva One
+    &--left
+      text-align: left
     &__heading
+      font-family: "Yeseva One"
       text-transform: uppercase
+      font-weight: normal
+      color: $dark
+      &--primary
+        font-size: 1.93rem
+        line-height: 138%
+        color: $primary
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ""
+        width: 92px
+        height: 2px
+        margin-left: 2rem
+        background-color: $primary
     &__text
       font-family: "Futura Book"
-      font-size: 1.43rem
-      line-height: 1.93rem
-      color: $third
+      &--projects
+        max-width: 31.57rem
+        font-size: 1.29rem
+        line-height: 2.07rem
+      &--design
+        font-size: 1.43rem
+        line-height: 1.93rem
     &__image
       display: flex
       justify-content: center
