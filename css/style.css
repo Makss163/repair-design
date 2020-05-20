@@ -409,7 +409,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.14rem; }
   .policy__label::before {
     content: "";
     width: 18px;
@@ -418,6 +419,8 @@ template {
     border: 1px solid #E3B873;
     border-radius: 1px;
     cursor: pointer; }
+  .policy__label--center {
+    justify-content: center; }
 
 .scroll-top {
   position: fixed;
@@ -678,8 +681,6 @@ img {
 .control__policy {
   flex-basis: 100%;
   margin-top: 1.2rem; }
-  .control__policy--label {
-    justify-content: center; }
 
 .video__play {
   position: relative;
@@ -765,8 +766,8 @@ img {
       margin-bottom: 4.5rem; }
     .control__button {
       margin-top: 0.7rem; }
-    .control__policy--label {
-      justify-content: flex-start; } }
+  .policy__label--center {
+    justify-content: flex-start; } }
 
 @media screen and (max-height: 320px) {
   .hero__scroll-down {
@@ -775,9 +776,7 @@ img {
     max-width: 40.79rem; }
   .control__video {
     max-width: 24.29rem;
-    min-height: 14.79rem; }
-  .control__policy--label {
-    justify-content: left; } }
+    min-height: 14.79rem; } }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -818,8 +817,10 @@ img {
   background-color: #E3B873;
   color: #fff; }
 
-.design__section-title {
-  margin-bottom: 2.86rem; }
+.design {
+  padding-bottom: 30rem; }
+  .design__section-title {
+    margin-bottom: 2.86rem; }
 
 .modal {
   opacity: 0;
@@ -888,7 +889,8 @@ img {
   .swiper-slide__text {
     flex-basis: 35%;
     margin-bottom: 2.42rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    margin-right: 1rem; }
   .swiper-slide__heading {
     margin-bottom: 0.64rem;
     font-family: "Yeseva One";
@@ -922,3 +924,50 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: 0; }
+
+.footer-wrap {
+  max-width: 63.43rem;
+  padding: 2.43rem 12.93rem;
+  margin: auto;
+  margin-top: -23rem;
+  background-color: #181818; }
+
+.footer__title {
+  margin-bottom: 3.19rem;
+  text-transform: uppercase;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.43rem;
+  text-align: center; }
+
+.footer__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 37.8rem; }
+
+.footer__input {
+  padding-top: 0.2rem; }
+  .footer__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    margin-bottom: 3.2rem;
+    font-style: normal;
+    font-weight: normal; }
+    .footer__input-group--full-width {
+      flex-basis: 100%;
+      margin-bottom: 0.2rem; }
+
+.footer__policy {
+  flex-basis: 100%;
+  margin-top: 2rem;
+  margin-bottom: 3.57rem; }
+
+.footer__button {
+  margin: auto;
+  padding: 1.285rem 4rem;
+  font-size: 1.07rem;
+  font-style: normal;
+  font-weight: 500; }
