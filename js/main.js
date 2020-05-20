@@ -75,5 +75,7 @@ $(document).ready(function () {
 
   bullets.css("left", prev.width() + 10);
   next.css("left", prev.width() + bullets.width() + 20);
+
+  new WOW().init();
   
 });

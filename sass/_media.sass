@@ -58,12 +58,15 @@
       margin-bottom: 1.86rem
   .design
     background-color: $dark-mobile
-    &__section-title
-      color: $light
   .section
     &--dark
       padding-top: 0
     &-title
+      &__heading
+        &--design
+          color: $light
+        &--control
+          margin-bottom: 2.86rem
       &__word
         &::after
           display: none
@@ -73,6 +76,8 @@
         max-width: 21.86rem
         margin: auto
         color: $light
+        &--design
+          color: $light
   .swiper-slide
     &__text
       font-size: 1rem
@@ -90,6 +95,9 @@
       margin-bottom: 4.5rem
     &__button
       margin-top: 0.7rem
+    &__policy
+      &--label
+        justify-content: flex-start
 
 @media screen and ( max-height: 320px )
   .hero
@@ -99,15 +107,11 @@
     &__text
       max-width: 40.79rem
     &__video
-      width: 24.29rem
-      height: 14.79rem
-      background: url(../images/control/video-mask-mobile.jpg) no-repeat center
+      max-width: 24.29rem
+      min-height: 14.79rem
     &__policy
       &--label
         justify-content: left
-  
-  
-  
   
 
   
