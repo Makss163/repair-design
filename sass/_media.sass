@@ -64,6 +64,9 @@
     &--dark
       padding-top: 0
     &-title
+      &__word
+        &::after
+          display: none
       &__image
         margin-bottom: 2rem
       &__text
@@ -78,12 +81,30 @@
       margin-top: 2rem
     &-50, &-30
       width: 100%
+  .control
+    background-color: $dark
+    color: $light
+    &__form
+      flex-direction: column
+    &__input-group
+      margin-bottom: 4.5rem
+    &__button
+      margin-top: 0.7rem
 
 @media screen and ( max-height: 320px )
-
   .hero
     &__scroll-down
       display: none
+  .control
+    &__text
+      max-width: 40.79rem
+    &__video
+      width: 24.29rem
+      height: 14.79rem
+      background: url(../images/control/video-mask-mobile.jpg) no-repeat center
+    &__policy
+      &--label
+        justify-content: left
   
   
   

@@ -23,9 +23,8 @@ $(document).ready(function () {
       scrl = $(".scroll-top"),
       blockPoint = document.querySelector(".hero");
 
-  console.log($(window).scrollTop());
+  // Условие для появления кнопки скролла вверх
   $(window).on("scroll", function () {
-    console.log($(window).scrollTop());
     if($(window).scrollTop() >= 600) {
       scrl.addClass("scroll-top--visible");
     };
@@ -34,6 +33,7 @@ $(document).ready(function () {
     };
   });
 
+  // Обрпботка события открытия и закрыти модального окна
   modalBtn.on("click", function () {
     modal.toggleClass("modal--visible");
   });
@@ -42,27 +42,33 @@ $(document).ready(function () {
     modal.toggleClass("modal--visible");
   });
 
+  //Обработка события нажатия кнопки скролла вверх
   function scrollUp () {
     blockPoint.scrollIntoView({
-      block: "start",
+      block: "start", 
       behavior: "smooth"
     });
   };
-
   scrl.on("click", scrollUp);
 
+  // Слайдер
   var mySwiper = new Swiper (".swiper-container", {
     loop: true,
+
+    // Точки-кнопки
     pagination: {
       el: ".swiper-pagination",
       type: "bullets",
     },
+    
+    // Стрелочки кнопки
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
 
+  // Позиционирование с взаимным учётом ширины точек и стрелок слайдера
   var next = $(".swiper-button-next");
   var prev = $(".swiper-button-prev");
   var bullets = $(".swiper-pagination");
