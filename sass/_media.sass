@@ -28,9 +28,6 @@
   .design
     &__card
       margin-bottom: 4.79rem
-  .card
-    &__text
-      margin: 0
   .col
     &-50, &-30
       margin-top: 1rem
@@ -58,6 +55,12 @@
       margin-bottom: 1.86rem
   .design
     background-color: $dark-mobile
+  .card
+    &__image
+      width: 100%
+    &__text
+      margin: 0
+      margin-top: -9.3rem
   .section
     &--dark
       padding-top: 0
@@ -99,8 +102,20 @@
     &__label
       &--center
         justify-content: flex-start
+  .footer
+    &__container
+      width: 100%
+      margin: 0
+    &__wrap
+      padding: 2.43rem 0.5rem
+    &__form
+      margin-right: 1rem
+      margin-left: 1rem 
+    &__input
+      &-group
+        flex-basis: 100%
 
-@media screen and ( max-height: 320px )
+@media screen and ( max-height: 360px )
   .hero
     &__scroll-down
       display: none
@@ -110,6 +125,10 @@
     &__video
       max-width: 24.29rem
       min-height: 14.79rem
+  .footer
+    &__button
+      margin: 0
+      width: 25rem
 
   
   
