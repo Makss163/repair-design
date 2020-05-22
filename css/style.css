@@ -895,6 +895,39 @@ input.invalid {
   .footer__menu {
     padding: 4.29rem 0;
     background-color: #181818; }
+  .footer__text {
+    margin: auto;
+    max-width: 39rem;
+    font-family: "Yeseva One", cursive;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.43rem;
+    line-height: 2rem;
+    color: #E3B873; }
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.71rem;
+    padding-bottom: 3.07rem; }
+  .footer__mail {
+    background: url("../images/footer-link-mail.svg") no-repeat center;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.07rem;
+    border-radius: 50%;
+    background-color: #E3B873; }
+  .footer__inst {
+    background: url("../images/footer-link-inst.svg") no-repeat center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #E3B873; }
+  .footer__map {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.64rem; }
 
 @media screen and (max-width: 1280px) {
   html {
@@ -942,7 +975,7 @@ input.invalid {
     min-width: 22.86rem;
     margin-bottom: 1.86rem; }
   .design {
-    background-color: #252525; }
+    background-color: #181818; }
   .card__image {
     width: 100%; }
   .card__text {
@@ -971,7 +1004,7 @@ input.invalid {
   .col-50, .col-30 {
     width: 100%; }
   .control {
-    background-color: #131313;
+    background-color: #181818;
     color: #fff; }
     .control__form {
       flex-direction: column; }
@@ -981,16 +1014,32 @@ input.invalid {
       margin-top: 0.7rem; }
   .policy__label--center {
     justify-content: flex-start; }
-  .footer__container {
-    width: 100%;
-    margin: 0; }
-  .footer__wrap {
-    padding: 2.43rem 0.5rem; }
-  .footer__form {
-    margin-right: 1rem;
-    margin-left: 1rem; }
-  .footer__input-group {
-    flex-basis: 100%; } }
+  .footer {
+    background: #181818; }
+    .footer__container {
+      width: 100%;
+      margin: 0; }
+    .footer__wrap {
+      padding: 2.43rem 0.5rem; }
+    .footer__form {
+      margin-right: 1rem;
+      margin-left: 1rem; }
+    .footer__input-group {
+      flex-basis: 100%; }
+    .footer__text {
+      max-width: 24rem;
+      font-size: 1.29rem; }
+    .footer__inst {
+      width: 2.79rem;
+      height: 2.79rem; }
+    .footer__mail {
+      width: 2.79rem;
+      height: 2.79rem; }
+    .footer__menu {
+      display: none; }
+    .footer__map {
+      padding: 0rem 0.8rem 2.93rem 0.8rem;
+      margin: 0; } }
 
 @media screen and (max-height: 360px) {
   .hero__scroll-down {
