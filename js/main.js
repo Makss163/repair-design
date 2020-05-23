@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 $(document).ready(function () {
   var modal = $(".modal"),
+      modalSent = $(".modal-sent"),
+      modalSentBtn = $(".modal-sent__button"),
       modalBtn = $("[data-toggle=modal]"),
       closeBtn = $(".modal__close"),
       scrl = $(".scroll-top"),
@@ -33,7 +35,7 @@ $(document).ready(function () {
     };
   });
 
-  // Обрпботка события открытия и закрыти модального окна
+  // Обработка события открытия и закрыти модального окна
   modalBtn.on("click", function () {
     modal.toggleClass("modal--visible");
   });
@@ -50,6 +52,11 @@ $(document).ready(function () {
     });
   };
   scrl.on("click", scrollUp);
+
+   // Обработка события кнопки модального окна "заявка отправлена"
+   modalSentBtn.on("click", function () {
+    modalSent.toggleClass("modal-sent--visible");
+  });
 
   // Слайдер
   var mySwiper = new Swiper (".swiper-container", {
@@ -115,7 +122,7 @@ $(document).ready(function () {
           console.log("работает: " + response);
           $(form)[0].reset();
           modal.toggleClass("modal--visible");
-          alert("Заявка отправлена");
+          modalSent.toggleClass("modal-sent--visible");
         }
       });
     },
@@ -156,7 +163,7 @@ $(document).ready(function () {
         success: function (response) {
           console.log("работает: " + response);
           $(form)[0].reset();
-          alert("Заявка отправлена");
+          modalSent.toggleClass("modal-sent--visible");
         }
       });
     },
@@ -200,7 +207,7 @@ $(document).ready(function () {
           success: function (response) {
             console.log("работает: " + response);
             $(form)[0].reset();
-            alert("Заявка отправлена");
+            modalSent.toggleClass("modal-sent--visible");
           }
         });
       },
