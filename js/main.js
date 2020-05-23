@@ -105,7 +105,20 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email"
       }
-    }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log("работает: " + response);
+          $(form)[0].reset();
+          modal.toggleClass("modal--visible");
+          alert("Заявка отправлена");
+        }
+      });
+    },
   });
 
     //Форма из секции control
@@ -134,7 +147,19 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email"
       }
-    }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log("работает: " + response);
+          $(form)[0].reset();
+          alert("Заявка отправлена");
+        }
+      });
+    },
   });
   
     //Форма из footer
@@ -166,7 +191,19 @@ $(document).ready(function () {
           email: "Введите корректный email"
         },
         userQuestion: "Заполните поле"
-      }
+      },
+      submitHandler: function(form) {
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: $(form).serialize(),
+          success: function (response) {
+            console.log("работает: " + response);
+            $(form)[0].reset();
+            alert("Заявка отправлена");
+          }
+        });
+      },
     });
   
   // Маска для телефона
