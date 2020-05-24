@@ -313,7 +313,12 @@ template {
 .row {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-top: 2.79rem; }
+  .row--team {
+    max-width: 86%;
+    margin: auto;
+    margin-top: 5.5rem; }
 
 .col-30 {
   flex-basis: 30%; }
@@ -429,12 +434,38 @@ img {
 
 .section {
   padding: 60px 0; }
+  .section__text {
+    max-width: 40.79rem;
+    margin: auto;
+    margin-bottom: 4.28rem;
+    text-align: center;
+    font-size: 1.43rem;
+    line-height: 2.4rem; }
+    .section__text--team {
+      margin-top: 3.79rem; }
+      .section__text--team::before {
+        content: "";
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+        width: 55px;
+        height: 2px;
+        background-color: #E3B873;
+        border-radius: 30px; }
+    .section__text--control::before {
+      content: "";
+      display: block;
+      margin: auto;
+      margin-bottom: 2.5rem;
+      width: 55px;
+      height: 2px;
+      background-color: #E3B873;
+      border-radius: 30px; }
   .section--dark {
     background-color: #131313;
     color: #fff; }
   .section-title {
     margin: auto;
-    max-width: 52.93rem;
     text-align: center; }
     .section-title--left {
       text-align: left; }
@@ -443,7 +474,8 @@ img {
     .section-title__heading {
       font-family: "Yeseva One";
       text-transform: uppercase;
-      font-weight: normal; }
+      font-weight: normal;
+      font-size: 1.43rem; }
       .section-title__heading--primary {
         font-size: 1.93rem;
         line-height: 138%;
@@ -460,15 +492,24 @@ img {
         margin-left: 2rem;
         background-color: #E3B873; }
     .section-title__text {
-      font-family: "Futura Book"; }
+      margin: auto;
+      font-family: "Futura Book";
+      font-style: normal;
+      font-weight: normal; }
       .section-title__text--projects {
         max-width: 31.57rem;
         font-size: 1.29rem;
         line-height: 2.07rem; }
       .section-title__text--design {
+        max-width: 52.93rem;
         font-size: 1.43rem;
         line-height: 1.93rem;
         color: #363636; }
+      .section-title__text--team {
+        margin-top: 1.64rem;
+        max-width: 32rem;
+        font-size: 1.43rem;
+        line-height: 1.93rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -479,6 +520,48 @@ img {
         width: 32px;
         height: 2px;
         background-color: #E3B873; }
+
+.card__text {
+  position: relative;
+  max-width: 23.6rem;
+  margin: auto;
+  margin-top: -9.3rem;
+  padding: 1.79rem 2.4rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+  .card__text--team {
+    margin-top: -5.85rem;
+    width: 16.64rem;
+    padding: 1.7rem 1rem; }
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-family: "Yeseva One";
+  font-size: 1.29rem; }
+  .card__title--team {
+    text-align: center; }
+
+.card__list {
+  padding: 0 0 0 1rem;
+  margin: 0 0 2.07rem 0;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  color: #959595; }
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  padding: 1.214rem 0 1.214rem 2.6rem;
+  width: 16.5rem;
+  font-family: "Yeseva One";
+  font-size: 1.29rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  background-color: #E3B873;
+  color: #fff; }
 
 label.invalid {
   color: red; }
@@ -649,23 +732,6 @@ input.invalid {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8); }
 
-.control__text {
-  max-width: 40.79rem;
-  margin: auto;
-  margin-bottom: 4.28rem;
-  text-align: center;
-  font-size: 1.43rem;
-  line-height: 2.4rem; }
-  .control__text::before {
-    content: "";
-    display: block;
-    margin: auto;
-    margin-bottom: 2.5rem;
-    width: 55px;
-    height: 2px;
-    background-color: #E3B873;
-    border-radius: 30px; }
-
 .control__form {
   display: flex;
   flex-wrap: wrap;
@@ -699,46 +765,56 @@ input.invalid {
 .types__section-title {
   margin-bottom: 2rem; }
 
-.card__text {
-  position: relative;
-  max-width: 23.6rem;
-  margin: auto;
-  margin-top: -9.3rem;
-  padding: 1.79rem 2.14rem;
-  background-color: #fff;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+.design {
+  margin-bottom: -35rem; }
 
-.card__title {
-  margin-top: 0;
-  margin-bottom: 0.7rem;
-  font-family: "Yeseva One";
-  font-size: 1.29rem; }
+.steps {
+  height: 1615px;
+  width: 100%;
+  background-color: #131313; }
 
-.card__list {
-  padding: 0 0 0 1rem;
-  margin: 0 0 2.07rem 0;
-  font-size: 1.07rem;
-  line-height: 1.79rem;
-  color: #959595; }
+.team {
+  padding-bottom: 20rem;
+  margin-top: -33rem; }
+  .team__image {
+    display: flex;
+    justify-content: center; }
+  .team__speciality {
+    margin-bottom: 2.8rem;
+    margin-top: 0.45rem;
+    text-align: center;
+    font-size: 1.29rem;
+    color: #959595; }
+  .team__icon {
+    display: inline-block;
+    position: relative;
+    left: -0.5rem;
+    top: 2.5rem;
+    width: 5rem;
+    height: 5rem; }
+    .team__icon--idea {
+      background: #E3B873 url("../images/team/idea.svg") no-repeat center; }
+    .team__icon--designer {
+      background: #E3B873 url("../images/team/designer.svg") no-repeat center; }
+    .team__icon--portfolio {
+      background: #E3B873 url("../images/team/portfolio.svg") no-repeat center; }
 
-.card__pricetag {
+.card__speciality {
   position: absolute;
   left: 0;
-  bottom: -1.79rem;
-  padding: 1.214rem 0 1.214rem 2.6rem;
-  width: 16.5rem;
+  bottom: 0;
+  margin-top: 1.71rem;
+  padding: 0.93rem 1.64rem 1.1rem 1.64rem;
+  width: 100%;
   font-family: "Yeseva One";
-  font-size: 1.29rem;
+  font-size: 0.93rem;
+  font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
+  text-align: center;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
   background-color: #E3B873;
   color: #fff; }
-
-.design {
-  padding-bottom: 30rem; }
-  .design__section-title {
-    margin-bottom: 2.86rem; }
 
 .modal {
   opacity: 0;
@@ -852,7 +928,7 @@ input.invalid {
     max-width: 63.43rem;
     padding: 2.43rem 0;
     margin: auto;
-    margin-top: -23rem;
+    margin-top: -20rem;
     margin-bottom: 3.71rem;
     background-color: #181818; }
   .footer__title {
@@ -979,7 +1055,9 @@ input.invalid {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .row--team {
+    max-width: 100%; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1017,6 +1095,11 @@ input.invalid {
   .card__text {
     margin: 0;
     margin-top: -9.3rem; }
+    .card__text--team {
+      margin: auto;
+      margin-top: -5.85rem; }
+  .section__text--team {
+    color: #fff; }
   .section--dark {
     padding-top: 0; }
   .section-title__heading--design {
@@ -1077,7 +1160,11 @@ input.invalid {
       display: none; }
     .footer__map {
       padding: 0 2rem 2rem 2rem;
-      margin: 0; } }
+      margin: 0; }
+  .team {
+    background-color: #181818; }
+    .team__image {
+      padding-left: 2rem; } }
 
 @media screen and (max-height: 360px) {
   .hero__scroll-down {

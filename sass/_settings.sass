@@ -14,12 +14,39 @@ img
 
 .section
   padding: 60px 0
+  &__text
+    max-width: 40.79rem
+    margin: auto
+    margin-bottom: 4.28rem
+    text-align: center
+    font-size: 1.43rem
+    line-height: 2.4rem
+    &--team
+      margin-top: 3.79rem
+      &::before
+        content: ""
+        display: block
+        margin: auto
+        margin-bottom: 1rem
+        width: 55px
+        height: 2px
+        background-color: $primary
+        border-radius: 30px
+    &--control
+      &::before
+        content: ""
+        display: block
+        margin: auto
+        margin-bottom: 2.5rem
+        width: 55px
+        height: 2px
+        background-color: $primary
+        border-radius: 30px
   &--dark
     background-color: $dark
     color: $light
   &-title
     margin: auto
-    max-width: 52.93rem 
     text-align: center
     &--left
       text-align: left
@@ -29,6 +56,7 @@ img
       font-family: "Yeseva One"
       text-transform: uppercase
       font-weight: normal
+      font-size: 1.43rem
       &--primary
         font-size: 1.93rem
         line-height: 138%
@@ -45,15 +73,24 @@ img
         margin-left: 2rem
         background-color: $primary
     &__text
+      margin: auto
       font-family: "Futura Book"
+      font-style: normal
+      font-weight: normal
       &--projects
         max-width: 31.57rem
         font-size: 1.29rem
         line-height: 2.07rem
       &--design
+        max-width: 52.93rem
         font-size: 1.43rem
         line-height: 1.93rem
         color: $third
+      &--team
+        margin-top: 1.64rem
+        max-width: 32rem
+        font-size: 1.43rem
+        line-height: 1.93rem
     &__image
       display: flex
       justify-content: center
@@ -64,6 +101,45 @@ img
         width: 32px
         height: 2px
         background-color: $primary
+.card
+  &__text
+    position: relative
+    max-width: 23.6rem
+    margin: auto
+    margin-top: -9.3rem
+    padding: 1.79rem 2.4rem
+    background-color: $light
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+    &--team
+      margin-top: -5.85rem
+      width: 16.64rem
+      padding: 1.7rem 1rem
+  &__title
+    margin-top: 0
+    margin-bottom: 0.7rem
+    font-family: "Yeseva One"
+    font-size: 1.29rem
+    &--team
+      text-align: center
+  &__list
+    padding: 0 0 0 1rem
+    margin: 0 0 2.07rem 0
+    font-size: 1.07rem
+    line-height: 1.79rem
+    color: $secondary
+  &__pricetag
+    position: absolute
+    left: 0
+    bottom: -1.79rem
+    padding: 1.214rem 0 1.214rem 2.6rem
+    width: 16.5rem
+    font-family: "Yeseva One"
+    font-size: 1.29rem
+    font-weight: normal
+    text-transform: uppercase
+    box-shadow: 5px 5px 10px rgba($primary, 0.3)
+    background-color: $primary
+    color: $light
 label
   &.invalid
     color: red
