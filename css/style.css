@@ -530,7 +530,7 @@ img {
   background-color: #fff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
   .card__text--team {
-    margin-top: -5.85rem;
+    margin-top: -6rem;
     width: 16.64rem;
     padding: 1.7rem 1rem; }
 
@@ -562,6 +562,9 @@ img {
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
   background-color: #E3B873;
   color: #fff; }
+
+.card__image--team {
+  width: 21.71rem; }
 
 label.invalid {
   color: red; }
@@ -777,8 +780,8 @@ input.invalid {
   padding-bottom: 20rem;
   margin-top: -33rem; }
   .team__image {
-    display: flex;
-    justify-content: center; }
+    width: 19.43rem;
+    margin: auto; }
   .team__speciality {
     margin-bottom: 2.8rem;
     margin-top: 0.45rem;
@@ -786,9 +789,8 @@ input.invalid {
     font-size: 1.29rem;
     color: #959595; }
   .team__icon {
-    display: inline-block;
     position: relative;
-    left: -0.5rem;
+    left: -2.5rem;
     top: 2.5rem;
     width: 5rem;
     height: 5rem; }
@@ -1057,7 +1059,9 @@ input.invalid {
   .hero__content {
     margin-left: 0; }
   .row--team {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .team__icon {
+    left: 0; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1068,7 +1072,9 @@ input.invalid {
   .design__card {
     margin-bottom: 4.79rem; }
   .col-50, .col-30 {
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+  .team__icon {
+    left: -2.5rem; } }
 
 @media screen and (max-width: 576px) {
   .scroll-top__button {
@@ -1164,6 +1170,7 @@ input.invalid {
   .team {
     background-color: #181818; }
     .team__image {
+      width: 27.3rem;
       padding-left: 2rem; } }
 
 @media screen and (max-height: 360px) {
