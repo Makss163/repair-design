@@ -24,6 +24,17 @@ $(document).ready(function () {
       closeBtn = $(".modal__close"),
       scrl = $(".scroll-top"),
       blockPoint = document.querySelector(".hero");
+  
+/*  $(window).resize(function() {
+
+    if ($(window).width()<=992) {
+      $('.button').off('hover');
+      $(".button").removeClass("button:hover")
+      console.log($(window).width());
+    }
+        
+  });*/
+        
 
   // Условие для появления кнопки скролла вверх
   $(window).on("scroll", function () {
